@@ -11,25 +11,25 @@ def job():
     if time.strftime("%A") in ["Saturday", "Sunday"]:
         contests = get_leetcode_contests()
         if contests:
-            send_email("LeetCode Contest Reminder", f"Upcoming contests: {', '.join(contests)}", "recipient@example.com")
+            send_email("LeetCode Contest Reminder", f"Upcoming contests: {', '.join(contests)}", "gt281203@gmail.com")
 
     # CodeChef on Wednesday
     if time.strftime("%A") == "Wednesday":
         contests = get_codechef_contests()
         if contests:
-            send_email("CodeChef Contest Reminder", f"Upcoming contests: {', '.join(contests)}", "recipient@example.com")
+            send_email("CodeChef Contest Reminder", f"Upcoming contests: {', '.join(contests)}", "gt281203@gmail.com")
 
     # GFG and Codeforces daily
     gfg_contests = get_gfg_contests()
     if gfg_contests:
-        send_email("GeeksforGeeks Contest Reminder", f"Upcoming contests: {', '.join(gfg_contests)}", "recipient@example.com")
+        send_email("GeeksforGeeks Contest Reminder", f"Upcoming contests: {', '.join(gfg_contests)}", "gt281203@gmail.com")
 
     codeforces_contests = get_codeforces_contests()
     if codeforces_contests:
-        send_email("Codeforces Contest Reminder", f"Upcoming contests: {', '.join(codeforces_contests)}", "recipient@example.com")
+        send_email("Codeforces Contest Reminder", f"Upcoming contests: {', '.join(codeforces_contests)}", "gt281203@gmail.com")
 
 # Schedule for every day at 9 AM
-schedule.every().day.at("09:00").do(job)
+schedule.every().day.at("20:24").do(job)
 
 while True:
     schedule.run_pending()

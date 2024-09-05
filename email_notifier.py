@@ -3,10 +3,10 @@ from email.mime.multipart import MIMEMultipart
 import os
 import smtplib
 
-to_address = 'gopaltiwari28122003@gmail.com'
-from_address = os.getenv('EMAIL_USER')
-password = os.getenv('EMAIL_PASSWORD')
-print(os.getenv('EMAIL_USER'))
+from_address = "gopaltiwari28122003@gmail.com"
+password = "qwhz rwcf uypq veok"
+print(from_address)
+print(password)
 # Function to send email
 def send_email(subject, body, to_address):
     # Create a MIMEText message object
