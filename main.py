@@ -29,7 +29,7 @@ def job():
         send_email("Codeforces Contest Reminder", f"Upcoming contests: {', '.join(codeforces_contests)}", "gt281203@gmail.com")
 
 # Schedule for every day at 9 AM
-schedule.every().day.at("20:24").do(job)
+schedule.every().day.at("9:00").do(job)
 
 while True:
     schedule.run_pending()
