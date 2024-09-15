@@ -4,7 +4,7 @@ import os
 import smtplib
 
 from_address = "gopaltiwari28122003@gmail.com"
-password = "qwhz rwcf uypq veok"
+password = "qwhz rwcf uypq vkdj veok"
 print(from_address)
 print(password)
 # Function to send email
